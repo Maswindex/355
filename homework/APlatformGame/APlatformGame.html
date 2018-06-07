@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>A Platform Game</title>
+
+    <!--link css-->
+    <link rel="stylesheet" href="APlatformGame.css">
+</head>
+<body class="bg">
+
+<h4 class="display-4 dis" id="levels">Level: <span id="levelCount"></span></h4>
+<h4 class="display-4 dis" id="lives">Lives: <span id="livesCount"></span></h4>
+<h1 class="display-4 dis" id="paused">paused</h1>
+<h1 class="display-4 dis" id="game_over">Game Over</h1>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="APlatformGame.js"></script>
+<script> runGame(GAME_LEVELS, DOMDisplay); </script>
+
+</body>
+</html>

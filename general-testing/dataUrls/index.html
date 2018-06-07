@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            margin-right:30px;
+            margin-left:30px;
+        }
+
+        #paintContainer {
+            width: 50%;
+        }
+
+        #results {
+            width: 50%;
+            border: solid black;
+        }
+
+        canvas {
+            border: solid black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="paintContainer"></div>
+    <div id="results"></div>
+    <script src="paint.js"></script>
+
+    <script>
+        createPaint(document.getElementById("paintContainer"));
+    </script>
+
+</body>
+</html>

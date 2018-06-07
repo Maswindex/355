@@ -1,0 +1,28 @@
+body {
+    font-family: "San Francisco", Helvetica, sans-serif;
+    background-color: white;
+
+}
+
+#navbar {
+    color: black;
+    background-color: white;
+}
+
+button {
+    border: 0;
+    background-color: white;
+    color: #0080ff;
+}
+
+#instructions, #map, #directions {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+#gotIt {
+    color: white;
+    border-radius: 5px;
+}

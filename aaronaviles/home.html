@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Aaron Aviles</title>
+
+    <!--link css-->
+    <link rel="stylesheet" href="home_styles.css">
+    <link title="timeline-styles" rel="stylesheet" type="text/css" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+</head>
+<body class="bg fixed-top">
+
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+    <div class="row m-0 p-0 w-100 navNav">
+        <a class="navbar-brand font-weight-light col col-lg-4 mr-0" href="#">
+            AaronAviles.com
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse justify-content-around navbar-collapse col col-lg-4" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link p-0 mr-4" href="places.html">Places</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link p-0 mr-4" href="#">Life</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link p-0 mr-4" href="#">People</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Entertainment</a>
+                        <a class="dropdown-item" href="#">Hospitality</a>
+                        <a class="dropdown-item" href="#">Life</a>
+                    </div>
+                </li>
+
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0">-->
+            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+            <!--</form>-->
+        </div>
+    </div>
+</nav>
+
+<div class="container h-100" >
+    <div class="row h-100 justify-content-center">
+        <div class="container pt-5 col-12 mx-auto h-100" id="main-container">
+            <!--<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1PHy_fE8_5hgSnCkT_2Jt9hi2eFgtSJjgnqfgxbCMRnU&font=Default&lang=en&initial_zoom=2&height=100%'-->
+                    <!--frameborder='0'></iframe>-->
+            <div id='timeline-embed'></div>
+        </div>
+    </div>
+</div>
+
+<!--jQuery-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+<!--Timeline Javascript-->
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<!--Rendering time-line from javascript-->
+<script type="text/javascript">
+
+    // var timeline_json = $.getJSON('timeline-embed', 'test_events.json');
+
+    // two arguments: the id of the Timeline container (no '#')
+    // and the JSON object or an instance of TL.TimelineConfig created from
+    // a suitable JSON object
+    window.timeline = new TL.Timeline('timeline-embed', 'test_events.json');
+</script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
